@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'can_frame_decryptor'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=can_frame_decryptor",
+                    "--package=can_frame_decryptor"
+                ],
+                "filter": {
+                    "name": "can_frame_decryptor",
+                    "kind": "bin"
+                }
+            },
+            "args": ["0x12DD5570 8 0x00 0x07 0x00 0x00 0xC8 0xE0 0x01 0x00"],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'can_frame_decryptor'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=can_frame_decryptor",
+                    "--package=can_frame_decryptor"
+                ],
+                "filter": {
+                    "name": "can_frame_decryptor",
+                    "kind": "bin"
+                }
+            },
+            "args": ["0x12DD5570 8 0x0 0x07 0x00 0x00 0xC8 0xE0 0x01 0x00"],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

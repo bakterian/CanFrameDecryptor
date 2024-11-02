@@ -1,0 +1,1120 @@
+{
+	"can_frames":
+    [
+        {
+            "id" : "0xAAAAAAAA",
+            "protocol"   : "Classical",
+            "length"     : 8,
+            "signals"    : 
+            [
+				{
+                    "name"              : "ControlSomeDisp_X_control_surround",
+                    "description"       : "Current Surround threshold",
+                    "start_byte"        : 1,
+                    "start_bit"         : 0,
+                    "bit_length"        : 7,
+                    "signal_value_names" : 
+                    [
+                        {
+                            "name"  : "Surround_off",
+                            "value" : 125
+                        },
+                        {
+                            "name"  : "Init",
+                            "value" : 126
+                        },
+                        {
+                            "name"  : "Fehler",
+                            "value" : 127
+                        }
+                    ]
+                },
+				{
+                    "name"              : "ControlSomeDisp_X_fokus_zone",
+                    "description"       : "Current Sound Fokus Zone",
+                    "start_byte"        : 2,
+                    "start_bit"         : 0,
+                    "bit_length"        : 4,
+                    "signal_value_names" : 
+                    [
+                        {
+                            "name"  : "Init",
+                            "value" : 0
+                        },
+                        {
+                            "name"  : "All",
+                            "value" : 1
+                        },
+                        {
+                            "name"  : "Front_left",
+                            "value" : 2
+                        },
+                        {
+                            "name"  : "Front_right",
+                            "value" : 3
+                        },
+                        {
+                            "name"  : "Front",
+                            "value" : 4
+                        },
+                        {
+                            "name"  : "Rear_left",
+                            "value" : 5
+                        },
+                        {
+                            "name"  : "Rear_right",
+                            "value" : 6
+                        },
+                        {
+                            "name"  : "Rear",
+                            "value" : 7
+                        },
+                        {
+                            "name"  : "Individual",
+                            "value" : 13
+                        },
+                        {
+                            "name"  : "Surround",
+                            "value" : 14
+                        },
+                        {
+                            "name"  : "Fehler",
+                            "value" : 15
+                        }
+                    ]
+                },
+				{
+                    "name"              : "ControlSomeDisp_X_contr_iClima_av",
+                    "description"       : "If iCLimate chosen function is availible to control",
+                    "start_byte"        : 2,
+                    "start_bit"         : 4,
+                    "bit_length"        : 2,
+                    "signal_value_names" : 
+                    [
+                        {
+                            "name"  : "Init",
+                            "value" : 0
+                        },
+                        {
+                            "name"  : "No_function_avialable",
+                            "value" : 1
+                        },
+                        {
+                            "name"  : "Function_avialable",
+                            "value" : 2
+                        },
+                        {
+                            "name"  : "Fehler",
+                            "value" : 3
+                        }
+                    ]
+                },
+				{
+                    "name"              : "ControlSomeDisp_X_control_fct",
+                    "description"       : "Function, which will be active (controlled by rotary knob, visible on rotary knob display)",
+                    "start_byte"        : 2,
+                    "start_bit"         : 6,
+                    "bit_length"        : 4,
+                    "signal_value_names" : 
+                    [
+                        {
+                            "name"  : "Init",
+                            "value" : 0
+                        },
+                        {
+                            "name"  : "No_function_avialable",
+                            "value" : 1
+                        },
+                        {
+                            "name"  : "Air_Volume",
+                            "value" : 2
+                        },
+                        {
+                            "name"  : "Air_Distribution",
+                            "value" : 3
+                        },
+                        {
+                            "name"  : "iClimate",
+                            "value" : 4
+                        },
+                        {
+                            "name"  : "Volume",
+                            "value" : 5
+                        },
+                        {
+                            "name"  : "Driving_modes",
+                            "value" : 6
+                        },
+                        {
+                            "name"  : "MapZoom",
+                            "value" : 7
+                        },
+                        {
+                            "name"  : "Configuration",
+                            "value" : 14
+                        },
+                        {
+                            "name"  : "Fehler",
+                            "value" : 15
+                        }
+                    ]
+                },
+				{
+                    "name"              : "ControlSomeDisp_X_control_iClima",
+                    "description"       : "Climate function, which is current active",
+                    "start_byte"        : 3,
+                    "start_bit"         : 2,
+                    "bit_length"        : 4,
+                    "signal_value_names" : 
+                    [
+                        {
+                            "name"  : "Init",
+                            "value" : 0
+                        },
+                        {
+                            "name"  : "No_function_avialable",
+                            "value" : 1
+                        },
+                        {
+                            "name"  : "Defog_certain_window",
+                            "value" : 2
+                        },
+                        {
+                            "name"  : "fast_cooling",
+                            "value" : 3
+                        },
+                        {
+                            "name"  : "fast_heating",
+                            "value" : 4
+                        },
+                        {
+                            "name"  : "fast_cooling",
+                            "value" : 5
+                        },
+                        {
+                            "name"  : "fast_heating",
+                            "value" : 6
+                        },
+                        {
+                            "name"  : "air_refreshing",
+                            "value" : 7
+                        },
+                        {
+                            "name"  : "hand_heating",
+                            "value" : 8
+                        },
+                        {
+                            "name"  : "Pollution_protection",
+                            "value" : 9
+                        },
+                        {
+                            "name"  : "Fehler",
+                            "value" : 15
+                        }
+                    ]
+                },
+				{
+                    "name"              : "ControlSomeDisp_X_control_MapMode",
+                    "description"       : "Current map mode",
+                    "start_byte"        : 3,
+                    "start_bit"         : 6,
+                    "bit_length"        : 3,
+                    "signal_value_names" : 
+                    [
+                        {
+                            "name"  : "Init",
+                            "value" : 0
+                        },
+                        {
+                            "name"  : "No_function_avialable",
+                            "value" : 1
+                        },
+                        {
+                            "name"  : "Manual",
+                            "value" : 2
+                        },
+                        {
+                            "name"  : "Automatic",
+                            "value" : 3
+                        },
+                        {
+                            "name"  : "Fehler",
+                            "value" : 7
+                        }
+                    ]
+                },
+				{
+                    "name"              : "ControlSomeDisp_X_control_MapZoom",
+                    "description"       : "Map zooming signal",
+                    "start_byte"        : 4,
+                    "start_bit"         : 1,
+                    "bit_length"        : 8,
+                    "signal_value_names" : 
+                    [
+                        {
+                            "name"  : "Init",
+                            "value" : 0
+                        },
+                        {
+                            "name"  : "scale_1",
+                            "value" : 1
+                        },
+                        {
+                            "name"  : "scale_2",
+                            "value" : 2
+                        },
+                        {
+                            "name"  : "scale_3",
+                            "value" : 3
+                        },
+                        {
+                            "name"  : "scale_4",
+                            "value" : 4
+                        },
+                        {
+                            "name"  : "scale_5",
+                            "value" : 5
+                        },
+                        {
+                            "name"  : "scale_6",
+                            "value" : 6
+                        },
+                        {
+                            "name"  : "scale_7",
+                            "value" : 7
+                        },
+                        {
+                            "name"  : "scale_8",
+                            "value" : 8
+                        },
+                        {
+                            "name"  : "scale_9",
+                            "value" : 9
+                        },
+                        {
+                            "name"  : "scale_10",
+                            "value" : 10
+                        },
+                        {
+                            "name"  : "scale_11",
+                            "value" : 11
+                        },
+                        {
+                            "name"  : "scale_12",
+                            "value" : 12
+                        },
+                        {
+                            "name"  : "scale_13",
+                            "value" : 13
+                        },
+                        {
+                            "name"  : "scale_14",
+                            "value" : 14
+                        },
+                        {
+                            "name"  : "scale_15",
+                            "value" : 15
+                        },
+                        {
+                            "name"  : "scale_16",
+                            "value" : 16
+                        },
+                        {
+                            "name"  : "scale_17",
+                            "value" : 17
+                        }
+                    ]
+                },
+				{
+                    "name"              : "ControlSomeDisp_X_control_sound",
+                    "description"       : "Source of Audio signal",
+                    "start_byte"        : 5,
+                    "start_bit"         : 1,
+                    "bit_length"        : 4,
+                    "signal_value_names" : 
+                    [
+                        {
+                            "name"  : "Init",
+                            "value" : 0
+                        },
+                        {
+                            "name"  : "No_function_avialable",
+                            "value" : 1
+                        },
+                        {
+                            "name"  : "Navi",
+                            "value" : 2
+                        },
+                        {
+                            "name"  : "SDS",
+                            "value" : 3
+                        },
+                        {
+                            "name"  : "Audio",
+                            "value" : 4
+                        },
+                        {
+                            "name"  : "TA",
+                            "value" : 5
+                        },
+                        {
+                            "name"  : "Phone",
+                            "value" : 6
+                        },
+                        {
+                            "name"  : "Phone_ringing",
+                            "value" : 7
+                        },
+                        {
+                            "name"  : "Digital_voice_assistant",
+                            "value" : 8
+                        }
+                    ]
+                },
+				{
+                    "name"              : "ControlSomeDisp_X_control_vol",
+                    "description"       : "Current volume value",
+                    "start_byte"        : 5,
+                    "start_bit"         : 5,
+                    "bit_length"        : 7,
+                    "signal_value_names" : 
+                    [
+                        {
+                            "name"  : "mute",
+                            "value" : 61
+                        },
+                        {
+                            "name"  : "No_function_avialable",
+                            "value" : 62
+                        },
+                        {
+                            "name"  : "Init",
+                            "value" : 126
+                        },
+                        {
+                            "name"  : "Fehler",
+                            "value" : 127
+                        }
+                    ]
+                },
+				{
+                    "name"              : "ControlSomeDisp_X_control_vol_max",
+                    "description"       : "Current volume maximum value",
+                    "start_byte"        : 6,
+                    "start_bit"         : 4,
+                    "bit_length"        : 6,
+                    "signal_value_names" : 
+                    [
+                        {
+                            "name"  : "No_function_avialable",
+                            "value" : 61
+                        },
+                        {
+                            "name"  : "Init",
+                            "value" : 62
+                        },
+                        {
+                            "name"  : "Fehler",
+                            "value" : 63
+                        }
+                    ]
+                },
+				{
+                    "name"              : "ControlSomeDisp_X_control_vol_min",
+                    "description"       : "Current volume minimum value",
+                    "start_byte"        : 7,
+                    "start_bit"         : 2,
+                    "bit_length"        : 6,
+                    "signal_value_names" : 
+                    [
+                        {
+                            "name"  : "No_function_avialable",
+                            "value" : 61
+                        },
+                        {
+                            "name"  : "Init",
+                            "value" : 62
+                        },
+                        {
+                            "name"  : "Fehler",
+                            "value" : 63
+                        }
+                    ]
+                },
+				{
+                    "name"              : "ControlSomeDisp_X_control_Point",
+                    "description"       : "number of selected preferred profiles",
+                    "start_byte"        : 8,
+                    "start_bit"         : 0,
+                    "bit_length"        : 3,
+                    "signal_value_names" : 
+                    [
+                        {
+                            "name"  : "Init",
+                            "value" : 0
+                        },
+                        {
+                            "name"  : "nmr_profiles_1",
+                            "value" : 1
+                        },
+                        {
+                            "name"  : "nmr_profiles_2",
+                            "value" : 2
+                        },
+                        {
+                            "name"  : "nmr_profiles_3",
+                            "value" : 3
+                        },
+                        {
+                            "name"  : "nmr_profiles_4",
+                            "value" : 4
+                        },
+                        {
+                            "name"  : "nmr_profiles_5",
+                            "value" : 5
+                        },
+                        {
+                            "name"  : "nmr_profiles_6",
+                            "value" : 6
+                        },
+                        {
+                            "name"  : "Fehler",
+                            "value" : 7
+                        }
+                    ]
+                },
+				{
+                    "name"              : "ControlSomeDisp_X_control_Point",
+                    "description"       : "This signal highlights the corresponding active navidot position in middle rotary knob’s GUI",
+                    "start_byte"        : 8,
+                    "start_bit"         : 3,
+                    "bit_length"        : 3,
+                    "signal_value_names" : 
+                    [
+                        {
+                            "name"  : "Init",
+                            "value" : 0
+                        },
+                        {
+                            "name"  : "A",
+                            "value" : 1
+                        },
+                        {
+                            "name"  : "B",
+                            "value" : 2
+                        },
+                        {
+                            "name"  : "C",
+                            "value" : 3
+                        },
+                        {
+                            "name"  : "D",
+                            "value" : 4
+                        },
+                        {
+                            "name"  : "E_NA_",
+                            "value" : 5
+                        },
+                        {
+                            "name"  : "F_NA_",
+                            "value" : 6
+                        },
+                        {
+                            "name"  : "Fehler",
+                            "value" : 7
+                        }
+                    ]
+                }
+			] 
+        },
+        {
+            "id" : "0xBBBBBBBB",
+            "protocol"   : "Classical",
+            "length"     : 8,
+            "signals"    : 
+            [
+				{
+                    "name"              : "FancyRotary_Aktive_Ebene",
+                    "description"       : "Signals of a fancy rotary button",
+                    "start_byte"        : 2,
+                    "start_bit"         : 4,
+                    "bit_length"        : 4,
+                    "signal_value_names" : 
+                    [
+                        {
+                            "name"  : "ohne_Verwendung",
+                            "value" : 0
+                        },
+                        {
+                            "name"  : "Ebene_1_aktiv",
+                            "value" : 1
+                        },
+                        {
+                            "name"  : "Ebene_2_aktiv",
+                            "value" : 2
+                        },
+                        {
+                            "name"  : "Ebene_3_aktiv",
+                            "value" : 3
+                        },
+                        {
+                            "name"  : "Ebene_4_aktiv",
+                            "value" : 4
+                        },
+                        {
+                            "name"  : "Ebene_5_aktiv",
+                            "value" : 5
+                        },
+                        {
+                            "name"  : "Ebene_6_aktiv",
+                            "value" : 6
+                        },
+                        {
+                            "name"  : "Ebene_7_aktiv",
+                            "value" : 7
+                        },
+                        {
+                            "name"  : "Ebene_8_aktiv",
+                            "value" : 8
+                        },
+                        {
+                            "name"  : "Ebene_9_aktiv",
+                            "value" : 9
+                        },
+                        {
+                            "name"  : "Ebene_10_aktiv",
+                            "value" : 10
+                        },
+                        {
+                            "name"  : "Ebene_11_aktiv",
+                            "value" : 11
+                        },
+                        {
+                            "name"  : "Ebene_12_aktiv",
+                            "value" : 12
+                        },
+                        {
+                            "name"  : "Ebene_13_aktiv",
+                            "value" : 13
+                        },
+                        {
+                            "name"  : "Ebene_14_aktiv",
+                            "value" : 14
+                        },
+                        {
+                            "name"  : "Ebene_15_aktiv",
+                            "value" : 15
+                        }
+                    ]
+                },
+				{
+                    "name"              : "FancyRotary_defekt",
+                    "description"       : "Status vom Fancy rotary",
+                    "start_byte"        : 3,
+                    "start_bit"         : 0,
+                    "bit_length"        : 4,
+                    "signal_value_names" : 
+                    [
+                        {
+                            "name"  : "nicht_defekt",
+                            "value" : 0
+                        },
+                        {
+                            "name"  : "Funktion_defekt",
+                            "value" : 1
+                        },
+                        {
+                            "name"  : "AMB_Fluegel_defekt",
+                            "value" : 2
+                        },
+                        {
+                            "name"  : "nicht_belegt",
+                            "value" : 3
+                        },
+                        {
+                            "name"  : "nicht_belegt",
+                            "value" : 4
+                        },
+                        {
+                            "name"  : "nicht_belegt",
+                            "value" : 5
+                        },
+                        {
+                            "name"  : "nicht_belegt",
+                            "value" : 6
+                        },
+                        {
+                            "name"  : "nicht_belegt",
+                            "value" : 7
+                        },
+                        {
+                            "name"  : "nicht_belegt",
+                            "value" : 8
+                        },
+                        {
+                            "name"  : "nicht_belegt",
+                            "value" : 9
+                        },
+                        {
+                            "name"  : "nicht_belegt",
+                            "value" : 10
+                        },
+                        {
+                            "name"  : "nicht_belegt",
+                            "value" : 11
+                        },
+                        {
+                            "name"  : "nicht_belegt",
+                            "value" : 12
+                        },
+                        {
+                            "name"  : "nicht_belegt",
+                            "value" : 13
+                        },
+                        {
+                            "name"  : "nicht_belegt",
+                            "value" : 14
+                        },
+                        {
+                            "name"  : "nicht_belegt",
+                            "value" : 15
+                        }
+                    ]
+                },
+				{
+                    "name"              : "FancyRotary_Taster",
+                    "description"       : "Betätigungszustand  FancyRotary",
+                    "start_byte"        : 3,
+                    "start_bit"         : 4,
+                    "bit_length"        : 2,
+                    "signal_value_names" : 
+                    [
+                        {
+                            "name"  : "nicht_betaetigt",
+                            "value" : 0
+                        },
+                        {
+                            "name"  : "betaetigt",
+                            "value" : 1
+                        },
+                        {
+                            "name"  : "reserviert",
+                            "value" : 2
+                        },
+                        {
+                            "name"  : "reserviert_Tastenklemmer",
+                            "value" : 3
+                        }
+                    ]
+                },
+				{
+                    "name"              : "FancyRotary_Touch",
+                    "description"       : "Touchsignale des fancyRotary",
+                    "start_byte"        : 3,
+                    "start_bit"         : 6,
+                    "bit_length"        : 4,
+                    "signal_value_names" : 
+                    [
+                        {
+                            "name"  : "nicht_betaetigt",
+                            "value" : 0
+                        },
+                        {
+                            "name"  : "Tippen",
+                            "value" : 1
+                        },
+                        {
+                            "name"  : "Wischen_Slide",
+                            "value" : 2
+                        },
+                        {
+                            "name"  : "Geste",
+                            "value" : 3
+                        },
+                        {
+                            "name"  : "Doppeltippen_Doppelklick",
+                            "value" : 4
+                        },
+                        {
+                            "name"  : "Longpress_1_Halten_1",
+                            "value" : 5
+                        },
+                        {
+                            "name"  : "Longpress_1_Halten_2",
+                            "value" : 6
+                        },
+                        {
+                            "name"  : "Longpress_1_Halten_3",
+                            "value" : 7
+                        },
+                        {
+                            "name"  : "Press",
+                            "value" : 8
+                        },
+                        {
+                            "name"  : "Strong_Press",
+                            "value" : 9
+                        },
+                        {
+                            "name"  : "reserviert",
+                            "value" : 10
+                        },
+                        {
+                            "name"  : "reserviert",
+                            "value" : 11
+                        },
+                        {
+                            "name"  : "reserviert",
+                            "value" : 12
+                        },
+                        {
+                            "name"  : "reserviert",
+                            "value" : 13
+                        },
+                        {
+                            "name"  : "Taktgeber_increment",
+                            "value" : 14
+                        },
+                        {
+                            "name"  : "Fehler",
+                            "value" : 15
+                        }
+                    ]
+                },
+				{
+                    "name"              : "FancyRotary_Ist_Atmosphere",
+                    "description"       : "Atm profile",
+                    "start_byte"        : 4,
+                    "start_bit"         : 2,
+                    "bit_length"        : 6,
+                    "signal_value_names" : 
+                    [
+                        {
+                            "name"  : "Init",
+                            "value" : 0
+                        },
+                        {
+                            "name"  : "Atmosphere_1",
+                            "value" : 1
+                        },
+                        {
+                            "name"  : "Atmosphere_2",
+                            "value" : 2
+                        },
+                        {
+                            "name"  : "Atmosphere_3",
+                            "value" : 3
+                        },
+                        {
+                            "name"  : "Atmosphere_4",
+                            "value" : 4
+                        },
+                        {
+                            "name"  : "Atmosphere_5",
+                            "value" : 5
+                        },
+                        {
+                            "name"  : "Atmosphere_6",
+                            "value" : 6
+                        },
+                        {
+                            "name"  : "Atmosphere_7",
+                            "value" : 7
+                        },
+                        {
+                            "name"  : "Atmosphere_8",
+                            "value" : 8
+                        },
+                        {
+                            "name"  : "Atmosphere_9",
+                            "value" : 9
+                        },
+                        {
+                            "name"  : "Atmosphere_10",
+                            "value" : 10
+                        },
+                        {
+                            "name"  : "Atmosphere_11",
+                            "value" : 11
+                        },
+                        {
+                            "name"  : "Atmosphere_12",
+                            "value" : 12
+                        },
+                        {
+                            "name"  : "Atmosphere_13",
+                            "value" : 13
+                        },
+                        {
+                            "name"  : "Atmosphere_14",
+                            "value" : 14
+                        },
+                        {
+                            "name"  : "Atmosphere_15",
+                            "value" : 15
+                        },
+                        {
+                            "name"  : "Atmosphere_16",
+                            "value" : 16
+                        },
+                        {
+                            "name"  : "Atmosphere_17",
+                            "value" : 17
+                        },
+                        {
+                            "name"  : "Atmosphere_18",
+                            "value" : 18
+                        },
+                        {
+                            "name"  : "Atmosphere_19",
+                            "value" : 19
+                        },
+                        {
+                            "name"  : "Atmosphere_20",
+                            "value" : 20
+                        },
+                        {
+                            "name"  : "Atmosphere_21",
+                            "value" : 21
+                        },
+                        {
+                            "name"  : "Atmosphere_22",
+                            "value" : 22
+                        },
+                        {
+                            "name"  : "Atmosphere_23",
+                            "value" : 23
+                        },
+                        {
+                            "name"  : "Atmosphere_24",
+                            "value" : 24
+                        },
+                        {
+                            "name"  : "Atmosphere_25",
+                            "value" : 25
+                        },
+                        {
+                            "name"  : "Atmosphere_26",
+                            "value" : 26
+                        },
+                        {
+                            "name"  : "Atmosphere_27",
+                            "value" : 27
+                        },
+                        {
+                            "name"  : "Atmosphere_28",
+                            "value" : 28
+                        },
+                        {
+                            "name"  : "Atmosphere_29",
+                            "value" : 29
+                        },
+                        {
+                            "name"  : "Atmosphere_30",
+                            "value" : 30
+                        },
+                        {
+                            "name"  : "Atmosphere_31",
+                            "value" : 31
+                        }
+                    ]
+                },
+				{
+                    "name"              : "FancyRotary_Ist_Profil",
+                    "description"       : "Current profile",
+                    "start_byte"        : 5,
+                    "start_bit"         : 0,
+                    "bit_length"        : 6,
+                    "signal_value_names" : 
+                    [
+                        {
+                            "name"  : "nicht_belegt",
+                            "value" : 0
+                        },
+                        {
+                            "name"  : "Profil_Comfort",
+                            "value" : 1
+                        },
+                        {
+                            "name"  : "Profil_Normal",
+                            "value" : 2
+                        },
+                        {
+                            "name"  : "Profil_Sport",
+                            "value" : 3
+                        },
+                        {
+                            "name"  : "Profil_Offroad",
+                            "value" : 4
+                        },
+                        {
+                            "name"  : "Profil_Eco",
+                            "value" : 5
+                        },
+                        {
+                            "name"  : "Profil_Race",
+                            "value" : 6
+                        },
+                        {
+                            "name"  : "Profil_Individual",
+                            "value" : 7
+                        },
+                        {
+                            "name"  : "Profil_Range",
+                            "value" : 8
+                        },
+                        {
+                            "name"  : "Profil_Lift",
+                            "value" : 9
+                        },
+                        {
+                            "name"  : "Profil_Snow",
+                            "value" : 10
+                        },
+                        {
+                            "name"  : "Profil_Offroad_Expert",
+                            "value" : 11
+                        },
+                        {
+                            "name"  : "nicht_belegt",
+                            "value" : 12
+                        },
+                        {
+                            "name"  : "nicht_belegt",
+                            "value" : 13
+                        },
+                        {
+                            "name"  : "nicht_belegt",
+                            "value" : 14
+                        },
+                        {
+                            "name"  : "nicht_belegt",
+                            "value" : 15
+                        },
+                        {
+                            "name"  : "Profil_Special",
+                            "value" : 16
+                        },
+                        {
+                            "name"  : "Profil_Special",
+                            "value" : 17
+                        },
+                        {
+                            "name"  : "nicht_belegt",
+                            "value" : 18
+                        },
+                        {
+                            "name"  : "Profil_Traction",
+                            "value" : 19
+                        }
+                    ]
+                },
+				{
+                    "name"              : "FancyRotary_Display_Action",
+                    "description"       : "Signals touch-surface",
+                    "start_byte"        : 5,
+                    "start_bit"         : 6,
+                    "bit_length"        : 4,
+                    "signal_value_names" : 
+                    [
+                        {
+                            "name"  : "none",
+                            "value" : 0
+                        },
+                        {
+                            "name"  : "Tap",
+                            "value" : 1
+                        },
+                        {
+                            "name"  : "Swipe_left",
+                            "value" : 2
+                        },
+                        {
+                            "name"  : "Swipe_right",
+                            "value" : 3
+                        },
+                        {
+                            "name"  : "Swipe_up",
+                            "value" : 4
+                        },
+                        {
+                            "name"  : "Swipe_down",
+                            "value" : 5
+                        },
+                        {
+                            "name"  : "Swipe_Rotation_left",
+                            "value" : 6
+                        },
+                        {
+                            "name"  : "Swipe_Rotation_right",
+                            "value" : 7
+                        },
+                        {
+                            "name"  : "reserved",
+                            "value" : 8
+                        },
+                        {
+                            "name"  : "reserved",
+                            "value" : 9
+                        },
+                        {
+                            "name"  : "reserved",
+                            "value" : 10
+                        },
+                        {
+                            "name"  : "reserved",
+                            "value" : 11
+                        },
+                        {
+                            "name"  : "reserved",
+                            "value" : 12
+                        },
+                        {
+                            "name"  : "reserved",
+                            "value" : 13
+                        },
+                        {
+                            "name"  : "reserved",
+                            "value" : 14
+                        },
+                        {
+                            "name"  : "reserved",
+                            "value" : 15
+                        }
+                    ]
+                },
+				{
+                    "name"              : "FancyRotary_m_Control",
+                    "description"       : "Describes the function (values) when rotating",
+                    "start_byte"        : 6,
+                    "start_bit"         : 2,
+                    "bit_length"        : 4,
+                    "signal_value_names" : 
+                    [
+                        {
+                            "name"  : "none",
+                            "value" : 0
+                        },
+                        {
+                            "name"  : "Mute",
+                            "value" : 1
+                        },
+                        {
+                            "name"  : "Rotarty_up",
+                            "value" : 2
+                        },
+                        {
+                            "name"  : "Rotarty_down",
+                            "value" : 3
+                        },
+                        {
+                            "name"  : "Fehler",
+                            "value" : 16
+                        }
+                    ]
+                }
+			] 
+        }
+    ]
+    
+}
